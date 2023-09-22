@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -9,7 +8,6 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule],
 })
-
 
 export class HomePage {
   textoHolaMundo = "Hola Mundo";
@@ -23,12 +21,10 @@ export class HomePage {
       this.divHolaMundo += this.textoHolaMundo.charAt(this.cont);
       this.cont++;
     } else {
-      // Reiniciar cuando se muestra el mensaje completo
       this.cont = 0;
       this.divHolaMundo = '';
     }
-  }
-  
+  }  
 }
 
 
